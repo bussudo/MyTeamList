@@ -1,0 +1,19 @@
+{
+  "name": "week10challenge",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest verbose _tests_/Engineer.test.js" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.3"
+  }
+}
