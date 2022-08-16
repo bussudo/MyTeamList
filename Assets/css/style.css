@@ -1,42 +1,46 @@
+body {
+  font-family: Arial;
+}
+
 .hero {
-  height: 300px;
+  height: 250px;
   width: 100%;
   padding: 20px;
   background-color: #DA2525;
   background-size: cover;
   background-position: center;
-  font-family: Arial;
+  
   text-align: center;
 }
 
 .flex-column {
   display: flex;
   flex-wrap: wrap;
-}
-.column-item {
   flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
   margin: 5px;
-  padding: 5px;
+  padding: 2px;
+  
   border-radius: 10px;
 }
+
 .cardTop {
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px;
-    width: 150px;
-    background-color: #4056e5;
-    font-family: Arial;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  float: left;
+  width: 25%;
+  background-color: #4056e5;
   text-align: center;
-    word-spacing: 5px;
+  word-spacing: 5px;
   }
   
 .cardBottom {
-  border-style: solid;
-    border-width: 1px;
-    padding: 5px;
-   width: 150px;
+  border-style:solid;
+  border-width: 1px;
+  padding: 10px;
+  float: left;
+  width: 25%;
   background-color: white;
-  font-family: Arial;
   word-spacing: 5px;
 }
 
