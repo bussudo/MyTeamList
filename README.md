@@ -13,6 +13,6 @@ A Node.js command-line application that takes information about employees on a s
 
 ### Screenshot
 
-![Alt Text](./Assets/img/screenshot.png)
+![Alt Text](./Assets/img/Screenshot.png)
 
 https://bussudo.github.io/MyTeamList.git/
