@@ -145,42 +145,52 @@ const getRole = () => {
   let cardtext = "";
   teamMembers.forEach((member) => {
     if (member.getRole() === "Manager") {
-      cardtext += ` <section class="cardTop">
+      cardtext += ` <div>
+      <section class="cardTop">
 
-  <p><h1> ${member.name}</h1></p>
-    <p><h1><i class="fas fa-coffee"></i>    Manager</h1></p>
+  <h1> ${member.name}</h1>
+  <h1><i class="fas fa-coffee"></i></h1>
+  <h1>Manager</h1>
     </section>
   <section class="cardBottom">
-  <div class="flex-column"
+  <div class="flex-column">
   <p>ID: ${member.id}</p>
   <p>Email: ${member.email}</p>
   <p>Office#: ${member.getOfficeNumber()}</p>
   </div>
-</section>`;
+</section>
+</div>`;
     } else if (member.getRole() === "Engineer") {
-      cardtext += ` <section class="cardTop">
+      cardtext += ` <div>
+      <section class="cardTop">
   
-  <p><h1> ${member.name}</h1></p>
-    <p><h1><i class="fas fa-glasses"></i>    Engineer</h1></p>
+  <h1> ${member.name}</h1>
+  <h1><i class="fas fa-glasses"></i></h1>
+    <h1>Engineer</h1>
     </section>
   <section class="cardBottom">
+  <div class="flex-column">
   <p>ID: ${member.id}</p>
   <p>Email: ${member.email}</p>
   <p>Github: ${member.github}</p>
   </div>
-  </section>`;
+  </section>
+  </div>`;
     } else if (member.getRole() === "Intern") {
-      cardtext += ` <section class="cardTop">
+      cardtext += ` <div><section class="cardTop">
      
-   <p><h1> ${member.name}</h1></p>
-   <p> <h1><i class="fas fa-user-graduate"></i>    Intern</h1></p>
+  <h1> ${member.name}</h1>
+  <h1><i class="fas fa-user-graduate"></i></h> 
+    <h1>Intern</h1>
     </section>
   <section class="cardBottom">
+  <div class="flex-column">
   <p>ID: ${member.id}</p>
   <p>Email: ${member.email}</p>
   <p>School: ${member.school}</p>
   </div>
-</section>`;
+</section>
+</div>`;
     }
   });
   let template = generateHTML(cardtext);
@@ -207,7 +217,7 @@ const generateHTML = (cardtext) => {
     <div class="hero">
       <h1>My Team</h1> 
     </div>
-    <div class="flex-column"> 
+    <div class="left-direction"> 
     ${cardtext}
     
 </div>
